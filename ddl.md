@@ -1,2 +1,6 @@
 # Detector Description Language (DDL)
 DDL provides generic XML constructs to describe materials (air, iron, etc.), shapes (or solids - box, cylinder, etc.), parts, compositions of parts, and specification of part-specific data. Table 1 lists the DDL tags available for the specification of these items. DDL further defines structuring tags to allow a granular document decomposition (listed in Table 2). Additionally, a cross document referencing mechanism allows splitting a description into multiple documents. DDL also supports named numerical constants and expressions. Together with the cross document referencing mechanism, expressions enable scalable descriptions by explicitly defining the formulas used to calculate derived quantities from base quantities.
+## Partitioning of description data
+To provide some structuring within the document, the notion of sections is introduced. Every DDL document consists of several sections, each of which contains data of the same category (material section, shape section, etc.). 
+## Layout of a DDL document
+Each section of a given type may occur several times in an unordered sequence, including not being present at all, within the same document, provided the value of each label attribute is unique among this set of sections.
