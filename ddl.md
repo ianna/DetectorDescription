@@ -63,3 +63,14 @@ Table 1: Basic building blocks of DDL. The listed tags are used to describe mate
 
 Items defined in the various sections can refer to items defined in different section - even if these sections are part of a different DDL document. The cross-referencing mechanism is used for this purpose. It has only minimum syntactical overhead but fulfils exactly the desired requirements. Yet it needs appropriate capabilities of the processor to be interpreted correctly. 
 
+| Section | Content | Tags for content |
+|-----------------| --- |---|
+| ```<ConstantsSection>``` | Definition of named constants using mathematical expressions | ```<Constant>``` |
+| ```<MaterialSection>``` | Definition of materials | ```<ElementaryMaterial>```, ```<CompositeMaterial>``` |
+| ```<SolidSection>``` | Specification of shapes | All shapes listed in Table 1 |
+| ```<RotationSection>``` | Definition of rotations and reflections | ```<Rotation>```, ```<RotationReflection>``` |
+| ```<LogicalPartSection>``` | Definition of parts (components to be used to build the geometrical hierarchy; assigns a material to a shape and provides a name for the component)  | ```<LogicalPart>``` |
+| ```<PosPartSection>``` | Building the geometrical hierarchy | ```<PosPart>```, ```<Algorithm>``` |
+| ```<SpecParSection>``` | Attaching specific parameters to parts in the geometrical hierarchy | ```<SpecPar>``` |
+ 
+Table 2. Sections of a DDL document and their content.
