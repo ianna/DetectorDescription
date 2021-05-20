@@ -58,3 +58,8 @@ Each section of a given type may occur several times in an unordered sequence, i
 | ```<Map>``` | 
 
 Table 1: Basic building blocks of DDL. The listed tags are used to describe materials, shapes, geometrical hierarchies of components, and specific data attached to nodes in the geometrical hierarchy. All tags except the ones marked ```(*)``` are subject to the cross- referencing mechanism, i.e. they provide an attribute name which has to be unique within a single document. Additionally, the names of ```<ElementaryMaterial>```s and ```<CompositeMaterial>```s have to be unique within one document.
+
+### Cross referencing
+
+Items defined in the various sections can refer to items defined in different section - even if these sections are part of a different DDL document. The cross-referencing mechanism is used for this purpose. It has only minimum syntactical overhead but fulfils exactly the desired requirements. Yet it needs appropriate capabilities of the processor to be interpreted correctly. 
+
