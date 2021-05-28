@@ -84,5 +84,10 @@ Table 2. Sections of a DDL document and their content.
 | ```<rRotation>``` | ```<Rotation>``` |
 | ```<rReflectioRotation>``` | ```<ReflectionRotation>``` |
 
-Table 3. DDL defined reference tags. Syntax: <r(RoleName) name=”[Namespace:]Name”/>
+Table 3. DDL defined reference tags. Syntax: ```<r(RoleName) name=”[Namespace:]Name”/>```
 
+A DDL item can only be referred to if it is uniquely identifiable. The tuple (namespace, element-name, value of attribute name) identifies an item uniquely  within a given set of documents selected by a Python configuration fragment, whereas namespace denotes the document-name without its file extension ```‘.xml’```.
+A cross reference is expressed by special reference tags. The general syntax of a reference tag is: ```<r(RoleName) name=”NameSpace:Name”/>```. Each data item which is subject to the cross-referencing mechanism is implicitly assigned to the namespace of the document where it is defined. If ```‘NameSpace:’``` is omitted, the reference refers to an item defined in the same document. Name corresponds to the value of the attribute name of the element being referred to. In the following example
+```<rMaterial name=”materials:Air”/>```
+the reference tag points to an element of type ```<ElementaryMaterial>``` or ```<CompositeMaterial>``` which has ```name=’Air’``` and is defined in document ```materials.xml```. The processor has to verify the validity of a reference.  A description is not complete unless all references are resolved.
+The cross-referencing mechanism is further enhanced by supporting cross references of attribute values for floating-point valued attributes in connection with named constants.
