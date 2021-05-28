@@ -74,3 +74,15 @@ Items defined in the various sections can refer to items defined in different se
 | ```<SpecParSection>``` | Attaching specific parameters to parts in the geometrical hierarchy | ```<SpecPar>``` |
  
 Table 2. Sections of a DDL document and their content.
+
+| Reference tag | Refers to |
+|---|---|
+| ```<rMaterial>``` | ```<ElementaryMaterial>``` or ```<CompositeMaterial>``` |
+| ```<rParent>``` | ```<LogicalPart>``` |
+| ```<rChild>``` | ```<LogicalPart>``` |
+| ```<rSolid>``` | To any of the shapes listed in Table 1 |
+| ```<rRotation>``` | ```<Rotation>``` |
+| ```<rReflectioRotation>``` | ```<ReflectionRotation>``` |
+
+Table 3. DDL defined reference tags. Syntax: <r(RoleName) name=”[Namespace:]Name”/>
+
