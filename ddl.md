@@ -91,3 +91,11 @@ A cross reference is expressed by special reference tags. The general syntax of 
 ```<rMaterial name=”materials:Air”/>```
 the reference tag points to an element of type ```<ElementaryMaterial>``` or ```<CompositeMaterial>``` which has ```name=’Air’``` and is defined in document ```materials.xml```. The processor has to verify the validity of a reference.  A description is not complete unless all references are resolved.
 The cross-referencing mechanism is further enhanced by supporting cross references of attribute values for floating-point valued attributes in connection with named constants.
+
+### Splitting into multiple documents
+
+It is advisable to choose a component-oriented breakdown.
+
+### Sequence of DDL definitions
+
+DDL does not define rules which specify the sequence of definition.
