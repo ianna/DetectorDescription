@@ -21,10 +21,16 @@ When positioning child components into parent components, the relative orientati
 Every ```<LogicalPart>``` has its local coordinate system. It is the reference system of the shape which has been assigned to the logical part.
 
 ## Construction description
-Figure 2: Description of the construction view.
+ 
+ ![Description of the construction view](images/image4.png "construction view")
+
+ Figure 2: Description of the construction view.
  
 ## Design description
-Figure 3: Description of the design view.
+ 
+ ![Description of the design view](images/image3.png "design view")
+
+ Figure 3: Description of the design view.
  
 ## Shapeless solids as subsidiary constructs
 A logical part D which is described by a shapeless solid is treated as a special case: the assigned material is ignored. D is only used as a container for children parts, which it groups together, providing a common handle for further placements of this group.
