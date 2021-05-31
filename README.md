@@ -10,3 +10,5 @@
 ### [Physical units and quantities](physical-units-and-quantities.md)
 ### [Materials](materials.md)
 ### [Shapes](shapes.md)
+### [Components](components.md)
+### [Geometry Hierarchy](geometry-hierarchy.md)
