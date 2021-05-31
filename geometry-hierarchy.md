@@ -15,3 +15,19 @@ The attribute copyNumber has to be an integer valued expression. It helps to dis
 Reference systems
 When positioning child components into parent components, the relative orientation between children and their parents has to be specified. Furthermore, the relative orientation of the two shapes making up a boolean solid has to be defined.
 Every ```<LogicalPart>``` has its local coordinate system. It is the reference system of the shape which has been assigned to the logical part.
+
+## Reference systems
+When positioning child components into parent components, the relative orientation between children and their parents has to be specified. Furthermore, the relative orientation of the two shapes making up a boolean solid has to be defined.
+Every ```<LogicalPart>``` has its local coordinate system. It is the reference system of the shape which has been assigned to the logical part.
+
+## Construction description
+Figure 2: Description of the construction view.
+ 
+## Design description
+Figure 3: Description of the design view.
+ 
+## Shapeless solids as subsidiary constructs
+A logical part D which is described by a shapeless solid is treated as a special case: the assigned material is ignored. D is only used as a container for children parts, which it groups together, providing a common handle for further placements of this group.
+ 
+## Attaching specific data: merging design and construction description
+DDL provides a generic mechanism to attach data to paths in the design graph: the ```<SpecPar>```, ```<PartSelector>``` and ```<Parameter>``` tags.
